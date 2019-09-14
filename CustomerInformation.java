@@ -22,6 +22,11 @@ public class CustomerInformation {
         System.out.println();
         
         Scanner sc = new Scanner(System.in); 
+        String number = "";
+        
+        System.out.print("Display another customer number? (y/n): ");
+            number = sc.nextLine();
+            System.out.println();
        
     }
     
