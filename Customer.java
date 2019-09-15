@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package customerinformation;
+package customerinformation.Customer;
 
 //*Name: Erica Osborn
 //Date: 09/14/19
@@ -16,8 +16,9 @@ public class Customer {
     private String city;
     private String state;
     private String zipCode;
-   
-    public Customer (String name, String address, String city, String state, 
+    private String dummynameadd;
+    
+   public Customer (String name, String address, String city, String state, 
             String zipCode){
             this.name = name;
             this.address = address;
@@ -26,51 +27,46 @@ public class Customer {
             this.zipCode = zipCode;
             
     }
-    
+    //name info
     public String getname(){
         return name;
     }
-    
+     public void setname(String name){
+        this.name =name;
+    }
+     
+    //address info
     public String getaddress(){
         return address;
     }
-    
-    public String getcity(){
-        return city;
-    }
-    
-    public String getstate(){
-        return state;
-    }
-    
-    public String getzipCode(){
-        return zipCode;
-    }
-    
-    
-    public void setname(String name){
-        this.name =name;
-    }
-    
     public void setaddress(String address){
         this.address = address;
     }
-    
+    //city info
+    public String getcity(){
+        return city;
+    }
     public void setcity(String city){
         this.city = city;
     }
-    
-    public void setstate(String state){
+    //state info
+    public String getstate(){
+        return state;
+    }
+     public void setstate(String state){
         this.state = state;
     }
-    
-     public void setzipCode(String zipCode){
+    public String getzipCode(){
+        return zipCode;
+    }
+    public void setzipCode(String zipCode)
+    {
         this.zipCode = zipCode;
     }
-    
-    
-    public String getNameAndAddress toString(){
-        return this.name, this.address;
+    public String getNameAndAddress()
+    {
+        dummynameadd=name+"\n"+address+" "+city+", "+state+" "+zipCode;
+        return dummynameadd;
     } 
     
     
