@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package customerinformation;
+package customerinformation.CustomerData;
 
 //*Name: Erica Osborn
 //Date: 09/14/19
@@ -25,7 +25,10 @@ public class Customer {
             this.state = state;
             this.zipCode = zipCode;
             
+            
     }
+    
+    
     
     public String getname(){
         return name;
@@ -49,7 +52,7 @@ public class Customer {
     
     
     public void setname(String name){
-        this.name =name;
+        this.name = name;
     }
     
     public void setaddress(String address){
@@ -69,9 +72,13 @@ public class Customer {
     }
     
     
-    public String getNameAndAddress toString(){
-        return this.name, this.address;
-    } 
+    public String getNameAndAddress(){
+        
+        System.out.println(name + address); 
+        return this.name + this.address;
+    }
+    
+    
     
     
     
